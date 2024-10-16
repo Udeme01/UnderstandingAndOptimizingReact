@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 import Counter from "./components/Counter/Counter.jsx";
 import Header from "./components/Header.jsx";
@@ -12,6 +12,8 @@ function App() {
 
   const handleSetCount = (newCount) => {
     setChosenCount(newCount);
+    setChosenCount((prevChosenCount) => prevChosenCount + 1);
+    console.log(chosenCount); //won't work
   };
 
   return (

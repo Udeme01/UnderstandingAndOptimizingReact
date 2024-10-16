@@ -1,3 +1,5 @@
+import React from "react";
+
 import { log } from "../log.js";
 import logoImg from "../assets/logo.png";
 
